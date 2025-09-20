@@ -1,0 +1,14 @@
+.center_nav_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 28px;
+}
+
+.center_nav_left{
+    display: flex;
+    align-items: center;
+}
+
+.center_nav_right{
+    display: flex;
+}

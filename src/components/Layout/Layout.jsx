@@ -1,19 +1,35 @@
-import { NavLink, Outlet } from 'react-router';
-import { Menu } from "antd";
+import { useState } from 'react';
+import { Outlet } from 'react-router';
+
+import LeftSideBar from './LeftSideBar/LeftSideBar';
+import NotificationBar from './NotificationBar/NotificationBar';
+import CenterNav from './CenterNav/CenterNav';
+
+import './layout.css';
 
 const Layout = ({ children }) => {
-    const menuItems = [
-        { key: 'home', label: <NavLink to={'/'}>'Home'</NavLink> },
-        { key: 'orders', label: <NavLink to={'/orders'}> 'Orders'</NavLink> },
-    ];
+    const [showNotification, setShowNotification] = useState(false);
+    const [showLeftSideBar, setShowLeftSideBar] = useState(true);
+
+    const showNotificationBarHandler = () => {
+        setShowNotification(!showNotification);
+    };
+
+    const showLeftSideBarHandler = () => {
+        setShowLeftSideBar(!showLeftSideBar);
+    };
+
     return (
-        <div className="layout">
-            <Menu 
-                mode="horizontal"
-                theme="dark" 
-                items={menuItems} 
-            />
-            <Outlet />
+        <div className="main_layout_container">
+            {showLeftSideBar ? <LeftSideBar />:null}
+            <div style={{ flex: 1 }}>
+                <CenterNav 
+                    showNotificationBarHandler={showNotificationBarHandler}
+                    showLeftSideBarHandler={showLeftSideBarHandler} 
+                />
+                <Outlet />
+            </div>
+            {showNotification ? <NotificationBar /> : null}
         </div>
     );
 };

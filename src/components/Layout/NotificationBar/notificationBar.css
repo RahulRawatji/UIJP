@@ -1,0 +1,10 @@
+.notification_bar{
+    padding: 20px;
+    width:280px;
+    background:#2b62b5ff;
+}
+
+.notification_contact_heading{
+    font-size: 14px;
+    font-weight: 600;
+}
