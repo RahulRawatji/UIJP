@@ -1,14 +1,59 @@
-.center_nav_container{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 28px;
+.center_nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
 }
 
-.center_nav_left{
-    display: flex;
-    align-items: center;
+.center_nav_left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.center_nav_right{
-    display: flex;
+.center_nav_right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon_btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.menu_icon {
+  width: 18px;
+  height: 18px;
+}
+
+.nav_icon {
+  font-size: 16px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav_icon:hover {
+  color: #fff;
+}
+
+.nav_search {
+  width: 160px;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  color: #ddd;
+}
+
+.nav_search input {
+  background: transparent !important;
+  color: #ddd !important;
+}
+
+.shortcut {
+  font-size: 11px;
+  /* color: #666; */
 }

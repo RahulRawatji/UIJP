@@ -1,8 +1,8 @@
 
 import { BrowserRouter, Route, Routes } from "react-router";
-import './App.css'
 import Layout from "./components/Layout/Layout";
 import ErrorPage from "./components/common/ErrorPage";
+import './App.css'
 
 function App() {
 

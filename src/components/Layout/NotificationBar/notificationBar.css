@@ -1,10 +1,94 @@
 .notification_bar{
     padding: 20px;
     width:280px;
-    background:#2b62b5ff;
+    background: #1C1C1C1A;
 }
 
-.notification_contact_heading{
+.notification_activity_container{
+    margin-top: 24px;
+}
+
+.notification_notitfication_heading,.notification_activity_heading,.notification_contact_heading{
     font-size: 14px;
     font-weight: 600;
+}
+.notification_contact_list{
+    padding: 0;
+    list-style-type: none;
+    margin-top: 16px;
+}
+
+.notification_contact_item{
+    display: flex;
+    align-items: center;
+    padding:8px 0;
+}
+
+.contact_name{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+.activity_timeline {
+  border-radius: 8px;
+  margin-top:16px;
+}
+
+.activity_timeline_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity_timeline_item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.activity_timeline_avatar_wrapper {
+  position: relative;
+  margin-right: 16px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.activity_timeline_avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* 🛠️ FIXED vertical line */
+.activity_timeline_line {
+  position: absolute;
+  top: 26px; /* Just below the avatar (40px + margin) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: #1C1C1C1A;
+  height: 42px;
+}
+
+.activity_timeline_content {
+  flex: 1;
+}
+
+.activity_timeline_text {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0%;
+}
+
+.activity_timeline_time {
+  font-size: 12px;
+  font-weight: 400;
+  color: #aaa;
 }

@@ -1,0 +1,48 @@
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.notification_item_list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.notification_item {
+  display: flex;
+  align-items: flex-start
+}
+
+.notification_item_item:last-child {
+  border-bottom: none;
+}
+
+.notification_item_icon {
+  width: 24px;
+  height: 24px;
+  background: #eef2f6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.notification_item_content {
+  flex: 1;
+}
+
+.notification_item_message {
+  font-size: 14px;
+  margin: 0;
+  color: #333;
+}
+
+.notification_item_time {
+  font-size: 12px;
+  color: #888;
+}
