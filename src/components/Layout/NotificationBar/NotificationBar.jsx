@@ -17,7 +17,11 @@ export default function NotificationBar() {
                 <h5 className='notification_contact_heading'>Contact</h5>
                 <ul>
                     <li>
-                        <img src={"https://drive.usercontent.google.com/download?id=1_ZlgFjPrDq1hMPhHpMAkViP2qBVsDa10&export=view&authuser=0"}/>
+                        <img src={"3D03.png"}/>
+                        <span>Natali Craig</span>
+                    </li>
+                    <li>
+                        <img src={"3D05.png"}/>
                         <span>Natali Craig</span>
                     </li>
                 </ul>
