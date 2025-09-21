@@ -17,10 +17,9 @@
 
 .homepage_card_layout{
     display: flex;
-    gap: 8px;
+    gap: 6px;
     max-width: 432px;
-    overflow: scroll;
-    margin-left: 10px;
+    flex-wrap: wrap;
     padding-bottom: 16px;
 }
 

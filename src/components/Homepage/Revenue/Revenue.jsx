@@ -19,7 +19,7 @@ function Revenue() {
                 <span style={{fontSize:'12px'}}>{item.location}</span>
                 <span style={{fontSize:'12px'}}>{item.percent}K</span>
               </div>
-              <Progress percent={item.percent} strokeColor={"#A8C5DA"} size={4} showInfo={false} />
+              <Progress percent={item.percent} strokeColor={"#A8C5DA"} strokeWidth={2} showInfo={false} />
             </div>)}  
           </div>
           </>

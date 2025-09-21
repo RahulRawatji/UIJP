@@ -9,7 +9,7 @@ import './layout.css';
 
 const Layout = ({ children }) => {
     const [showNotification, setShowNotification] = useState(false);
-    const [showLeftSideBar, setShowLeftSideBar] = useState(true);
+    const [showLeftSideBar, setShowLeftSideBar] = useState(false);
 
     const showNotificationBarHandler = () => {
         setShowNotification(!showNotification);
@@ -19,10 +19,19 @@ const Layout = ({ children }) => {
         setShowLeftSideBar(!showLeftSideBar);
     };
 
+    function handleClick(){
+        if(window.innerWidth <= 768 && showLeftSideBar){
+            setShowLeftSideBar(false);
+        }
+        if(window.innerWidth <= 768 && showNotification){
+            setShowNotification(false);
+        }
+    }
+
     return (
         <div className="main_layout_container">
             {showLeftSideBar ? <LeftSideBar />:null}
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 1 }} onClick={handleClick}>
                 <CenterNav 
                     showNotificationBarHandler={showNotificationBarHandler}
                     showLeftSideBarHandler={showLeftSideBarHandler} 

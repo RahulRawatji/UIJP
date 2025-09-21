@@ -1,7 +1,11 @@
 .notification_bar{
-    padding: 20px;
-    width:280px;
-    background: #1C1C1C1A;
+    padding: 20px;  
+    position: fixed;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background:#050404f1;
+    color:#fff;
 }
 
 .notification_activity_container{
@@ -91,4 +95,15 @@
   font-size: 12px;
   font-weight: 400;
   color: #aaa;
+}
+
+
+@media screen and (min-width: 768px){
+    .notification_bar{
+      position: unset;
+      background: #1C1C1C1A;
+      width:280px;
+       color:#1f1e1e;;
+    }
+  
 }

@@ -1,11 +1,17 @@
 .left_sidebar_menu{
     padding: 20px 16px;
-    width: 212px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #131111;
+    z-index: 999;
+    width: 60%;
+    color: #ccc;
 }
 
 .user_info_container{
     display: flex;
-    
 }
 
 .left_sidebar_sub_heading{
@@ -78,3 +84,12 @@
   color: #ccc;
 }
 
+
+@media screen and (min-width: 768px){  
+  .left_sidebar_menu {
+    position: unset;
+    width: 212px;
+     background: #f4f4f4;
+      color: rgba(28, 28, 28, 0.4);
+  }
+}
