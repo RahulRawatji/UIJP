@@ -53,7 +53,7 @@ function RevenueChart() {
                     <span className='homepage_top_text' style={{fontWeight:'600'}}>$68,211</span>
                 </div>
             </div>
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="90%">
                 <LineChart
                     width={500}
                     height={300}

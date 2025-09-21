@@ -27,6 +27,7 @@ function TopSelling() {
         <h5 className='homepage_top_selling_container_title'>Top Selling Products</h5>
         <div style={{ marginTop: '16px' }}>
             <Table
+                rowClassName={'top_selling_product_row'}
                 columns={COLUMNS}
                 dataSource={TOP_SELLING_DATA} 
                 pagination={false}

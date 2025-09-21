@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6px 16px;
-  border-bottom: 0.5px solid;
+  border-bottom: 0.5px solid rgba(197, 194, 194, 0.754);
 }
 
 .center_nav_left {
