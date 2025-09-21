@@ -1,7 +1,10 @@
 .order_list_container {
   background: #fff;
   padding: 28px;
+  max-width: 1024px;
   border-radius: 8px;
+  margin: auto;
+  margin-top: 24px;
 }
 
 .order_list_header {
@@ -20,6 +23,11 @@
 .order_list_title{
     font-size: 14px;
     font-weight: 600;
+}
+
+.order_table_status_cell{
+  display: flex;
+  align-items: center;
 }
 
 

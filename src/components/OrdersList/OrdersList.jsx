@@ -60,17 +60,19 @@ export default function OrderList() {
       render: (status) => {
         let color =
           status === "In Progress"
-            ? "blue"
+            ? "#95A4FC"
             : status === "Complete"
-            ? "green"
+            ? "#A1E3CB"
             : status === "Pending"
-            ? "cyan"
+            ? "#B1E3FF"
             : status === "Approved"
-            ? "gold"
-            : "red";
+            ? "#FFE999"
+            : "#1C1C1C66";
         return<> 
+             <div className="order_table_status_cell">
             <div style={{background:`${color}`,height:'6px',width:'6px',borderRadius:'50%',display:'inline-block',marginRight:'6px'}}></div>
-            <span style={{fontSize:'12px',color:`${color}`}}>{status}</span>
+            <span style={{fontSize:'11px',color:`${color}`}}>{status}</span>
+            </div>
           </>;
       },
     },
@@ -187,7 +189,7 @@ export default function OrderList() {
         columns={columns}
         dataSource={filteredData}
         pagination={{ pageSize: 10 }}
-        scroll={{ x: true }} 
+        scroll={{ x: 200 }} 
         style={{marginTop:'12px'}}
       />
     </div>

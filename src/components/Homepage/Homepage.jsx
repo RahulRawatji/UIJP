@@ -8,6 +8,7 @@ import ProjectionChart from "./ProjectionChart/ProjectionChart";
 
 import './homepage.css';
 import RevenueChart from "./RevenueChart/RevenueChart";
+import { NavLink } from "react-router";
 
 // Dummy data for demonstration
 const stats = [
@@ -24,13 +25,13 @@ export default function Homepage() {
       {/* Top Stats */}
       <div className="homepage_top_stats_container">
         <div className="homepage_card_layout"  >
-          {stats.map(item => <div style={{ width: '202px', height: '112px', background: `${item.background}`, borderRadius: '16px', padding: '4%' }}>
+          {stats.map(item => <><NavLink to={item.label} style={{ width: '202px', height: '112px', background: `${item.background}`, borderRadius: '16px', padding: '4%' }}>
             <p style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</p>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <span style={{ fontSize: '24px', fontWeight: '600', display: 'inline-block', marginRight: '28px' }}>{item.value}</span>
               <span style={{ fontSize: '12px', display: 'flex', alignItems: 'center', gap: '4px' }}>{item.change}{item.up ? <TrendingUp size={'11'} /> : <TrendingDown size={'11'} />}</span>
             </div>
-          </div>)}
+          </NavLink></>)}
         </div>
         <div className="homepage_bar_chart_container">
           <ProjectionChart />
