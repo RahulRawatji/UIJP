@@ -78,14 +78,7 @@ export default function LeftSideBar() {
    
     return (
         <aside className='left_sidebar_menu'>
-            <div className='user_info_container'>
-                {/* <div>
-                    <img src={USERIMG} />
-                </div>
-                <p>BiWind</p> */}
-                
-            </div>
-
+          
              <div className="sidebar_profile">
       {/* Profile Header */}
       <div className="profile_header">

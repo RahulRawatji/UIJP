@@ -1,0 +1,64 @@
+.homepage_top_stats_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage_card_layout{
+    display: flex;
+    gap: 8px;
+    max-width: 432px;
+    overflow: scroll;
+    margin-left: 10px;
+    padding-bottom: 16px;
+}
+
+.homepage_bar_chart_container{
+    width: 432px;
+    margin-top: 16px;
+    height: 252px;
+    padding: 24px;
+    background: #F7F9FB;
+}
+
+.hompage_bar_chat_title{
+    font-size: 14px;
+    font-weight: 600;
+}
+.homepage_bar_chart{
+    margin-top: 16px;
+}
+
+.homepage_bottom_line_chart_container{
+    padding: 24px;
+}
+
+.homepage_bottom_items_container{
+    margin-top: 16px;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage_revenue_container_title,.homepage_total_sales_container_title{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 484px) {
+    .homepage_card_layout{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (min-width: 840px) {
+    .homepage_top_stats_container{
+        flex-direction: row;
+    }
+    
+}

@@ -4,6 +4,7 @@ import Layout from "./components/Layout/Layout";
 import ErrorPage from "./components/common/ErrorPage";
 import './App.css'
 import OrderList from "./components/OrdersList/OrdersList";
+import Homepage from "./components/Homepage/Homepage";
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout/>}>
-          <Route path="/" element={<div>Home Page</div>} />
+          <Route path="/" element={<Homepage/>} />
           <Route path="/orders" element={<OrderList/>} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
