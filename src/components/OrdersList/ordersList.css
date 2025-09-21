@@ -1,0 +1,39 @@
+.order_list_container {
+  background: #fff;
+  padding: 28px;
+  border-radius: 8px;
+}
+
+.order_list_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.order_list_col_heading{
+    font-size:12px;
+    color:#1C1C1C66;
+    font-weight:400
+}
+
+.order_list_title{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.user_cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ant-table-thead > tr > th {
+  background: #f9f9f9;
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 12px 8px;
+}
