@@ -4,8 +4,8 @@ import {
   StarOutlined,
   SunOutlined,
   ClockCircleOutlined,
-  DesktopOutlined,
 } from "@ant-design/icons";
+import{ Search } from "lucide-react";
 
 import SideIconLight from "../../../assets/sideIconLight.svg";
 
@@ -24,6 +24,7 @@ export default function CenterNav({
         </button>
         <StarOutlined className="nav_icon" />
         <Breadcrumb
+        className="nav_breadcrumb"
           separator="/"
           items={[
             {
@@ -41,7 +42,8 @@ export default function CenterNav({
         <Input
           className="nav_search"
           placeholder="Search"
-          prefix={<span className="shortcut">⌘/</span>}
+          suffix={<span className="shortcut">⌘/</span>}
+          prefix={<Search size={12} style={{ color: "#A8C5DA" }} />}
         />
         <SunOutlined className="nav_icon" />
         <ClockCircleOutlined className="nav_icon" />

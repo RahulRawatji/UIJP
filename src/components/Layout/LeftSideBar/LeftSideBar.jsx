@@ -21,13 +21,11 @@ const MENUITEMONE = [
         {
             label: "Default",
             icon: ChartPie,
-            disabled: true,
         },
         {
             label: "eCommerce",
             icon: ShoppingBag,
-            children: ["Settings", "Security"],
-            disabled: true,
+            children: ["Cart", "Inventory"],
         },
         {
             label: "Projects",

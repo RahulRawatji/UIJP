@@ -71,7 +71,7 @@
 .nav_item {
   font-size: 15px;
   margin: 8px 0;
-  color: #222;
+  color: #e8e8e8;
   cursor: pointer;
   position: relative;
   padding-left: 18px;
@@ -89,7 +89,13 @@
   .left_sidebar_menu {
     position: unset;
     width: 212px;
-     background: #f4f4f4;
-      color: rgba(28, 28, 28, 0.4);
+     background: #1C1C1C1A;
+      color: #222;
   }
+
+
+.nav_item {
+  color: #222;
+}
+
 }
