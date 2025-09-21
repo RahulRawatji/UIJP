@@ -5,6 +5,7 @@ import './homepage.css';
 import { TrendingDown, TrendingUp } from "lucide-react";
 import { Progress } from "antd";
 import TotalSales from "./TotalSales/TotalSales";
+import TopSelling from "./TopSelling/TopSelling";
 // Dummy data for demonstration
 const stats = [
   { label: "Customers", value: "3,781", change: "+11.01%", up: true, background:'#E3F5FF'},
@@ -71,7 +72,7 @@ const projectionData = [
   }
 ]
 
-const salesData = [
+const revenueData = [
   { location: "New York", percent: 70 },
   { location: "San Francisco", percent: 50 },
   { location: "Sydney", percent: 30 },
@@ -132,7 +133,7 @@ export default function Homepage() {
             <img src="WorldMapLight.png" alt="world map" style={{width:'100%',height:'100%'}} />
           </div>
           <div>
-            {salesData.map(item=><div>
+            {revenueData.map(item=><div>
               <div style={{display:'flex',justifyContent:'space-between'}}>
                 <span style={{fontSize:'12px'}}>{item.location}</span>
                 <span style={{fontSize:'12px'}}>{item.percent}K</span>
@@ -141,7 +142,9 @@ export default function Homepage() {
             </div>)}  
           </div>
         </div>
-        <div></div>
+        <div style={{order:'3'}}>
+          <TopSelling/>
+        </div>
         <div style={{height:'318px',width:'202px',background:'#F7F9FB',order:'2',padding:'24px',borderRadius:'16px'}}>
               <TotalSales/>
         </div>

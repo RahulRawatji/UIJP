@@ -10,9 +10,9 @@ const SALES_DATA = [
 ]
 
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#BAEDBD', '#95A4FC', '#B1E3FF', '#1C1C1C'];
 
-export default function TotalSales() {
+function TotalSales() {
     return (
         <>
             <h5 className="homepage_total_sales_container_title">Total Sales</h5>
@@ -62,4 +62,7 @@ export default function TotalSales() {
             </div>
         </>
     )
-}
+};
+
+
+export default TotalSales;
