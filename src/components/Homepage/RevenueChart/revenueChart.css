@@ -1,0 +1,26 @@
+.homepage_revenue_chart_top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:28px;
+}
+
+.homepage_top_text{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.homepage_revenue_chart_top_subtext{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px){
+
+    .homepage_revenue_chart_top_subtext{
+        flex-direction: row;
+        gap: 8px; 
+    }
+}

@@ -1,8 +1,18 @@
+.homepage_main_container{
+    padding:24px;
+}
+
+.homepage_main_title{
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .homepage_top_stats_container{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 16px;
 }
 
 .homepage_card_layout{
@@ -39,15 +49,37 @@
     display: flex;
     /* flex-direction: column; */
     gap: 8px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 936px;
+    margin: auto;
 }
 
 .homepage_revenue_container_title,.homepage_total_sales_container_title,.homepage_top_selling_container_title{
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 16px;
+}
+
+.homepage_review_item_container,.homepage_total_sales_item_container{
+    height:318px;
+    width:202px;
+    background:#F7F9FB;
+    padding:24px;
+    border-radius:16px;
+}
+
+.homepage_top_selling_tabel_container{
+    order:3;
+    margin-top: 24px;
+}
+
+.homepage_revenue_chart_container{
+    padding: 24px 0;
+    width: 390px;
+    height: 300px;
+    order:1;
 }
 
 @media screen and (min-width: 484px) {
@@ -60,6 +92,15 @@
 @media screen and (min-width: 840px) {
     .homepage_top_stats_container{
         flex-direction: row;
+    }
+    .homepage_revenue_chart_container{
+        order:0;
+        width: 70%;
+    }
+
+    .homepage_top_selling_tabel_container{
+        order: unset;
+        width: 70%;
     }
     
 }

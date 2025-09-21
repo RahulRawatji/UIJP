@@ -27,7 +27,9 @@ function TopSelling() {
         <div style={{ marginTop: '16px' }}>
             <Table
                 columns={COLUMNS}
-                dataSource={TOP_SELLING_DATA} />
+                dataSource={TOP_SELLING_DATA} 
+                pagination={false}
+                />
         </div>
     </>
 
