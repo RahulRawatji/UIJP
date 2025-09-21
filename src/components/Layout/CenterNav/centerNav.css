@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6px 16px;
+  border-bottom: 0.5px solid;
 }
 
 .center_nav_left {
@@ -31,13 +32,13 @@
 
 .nav_icon {
   font-size: 16px;
-  color: #ccc;
+  color: var(--color);
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
-.nav_icon:hover {
-  color: #fff;
+.nav_icon:hover,.menu_icon:hover {
+  color: #3ebfdd;
 }
 
 .nav_search {

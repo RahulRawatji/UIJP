@@ -1,30 +1,27 @@
 import { Input, Breadcrumb } from "antd";
-import {
-  BellOutlined,
-  StarOutlined,
-  SunOutlined,
-  ClockCircleOutlined,
-} from "@ant-design/icons";
-import{ Search } from "lucide-react";
-
-import SideIconLight from "../../../assets/sideIconLight.svg";
+import { Search, Bell, Clock4, Sun, Star, PanelRight, PanelLeft } from "lucide-react";
 
 import "./centerNav.css";
 
-export default function CenterNav({
+function CenterNav({
   showLeftSideBarHandler,
   showNotificationBarHandler,
 }) {
+
+  const switchThemeHandler = () => {
+    document.body.classList.toggle('dark')
+  };
+
   return (
     <div className="center_nav_container">
       {/* Left Section */}
       <div className="center_nav_left">
         <button className="icon_btn" onClick={showLeftSideBarHandler}>
-          <img src={SideIconLight} className="menu_icon" alt="menu" />
+          <PanelLeft size={20} className="menu_icon" />
         </button>
-        <StarOutlined className="nav_icon" />
+        <Star size={20} className="nav_icon" />
         <Breadcrumb
-        className="nav_breadcrumb"
+          className="nav_breadcrumb"
           separator="/"
           items={[
             {
@@ -45,13 +42,15 @@ export default function CenterNav({
           suffix={<span className="shortcut">⌘/</span>}
           prefix={<Search size={12} style={{ color: "#A8C5DA" }} />}
         />
-        <SunOutlined className="nav_icon" />
-        <ClockCircleOutlined className="nav_icon" />
-        <BellOutlined className="nav_icon" />
+        <Sun size={20} className="nav_icon" onClick={switchThemeHandler} />
+        <Clock4 size={20} className="nav_icon " />
+        <Bell size={20} className="nav_icon " />
         <button className="icon_btn" onClick={showNotificationBarHandler}>
-          <img src={SideIconLight} className="menu_icon" alt="menu" />
+          <PanelRight size={20} className="menu_icon" />
         </button>
       </div>
     </div>
   );
 }
+
+export default CenterNav;

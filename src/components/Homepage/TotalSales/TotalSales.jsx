@@ -58,6 +58,20 @@ function TotalSales() {
                         </div>
                         <span style={{fontSize:'12px'}}>$300</span>
                     </div>
+                     <div style={{display:'flex',justifyContent:'space-between',marginBottom:'8px'}}>
+                        <div>
+                            <span></span>
+                            <span style={{fontSize:'12px'}}>Direct</span>
+                        </div>
+                        <span style={{fontSize:'12px'}}>$300</span>
+                    </div>
+                     <div style={{display:'flex',justifyContent:'space-between',marginBottom:'8px'}}>
+                        <div>
+                            <span></span>
+                            <span style={{fontSize:'12px'}}>Direct</span>
+                        </div>
+                        <span style={{fontSize:'12px'}}>$300</span>
+                    </div>
                 </div>           
             </div>
         </>

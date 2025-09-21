@@ -15,10 +15,11 @@ const COLUMNS = [
         dataIndex: 'name',
         key: 'name',
         render: text => <span className='top_selling_product_row'>{text}</span>,
+        onCell: () => ({ style: { padding: '10px' } })
     },
-    { title: <span className='top_selling_product_coloumn_title'>Price</span>, dataIndex: 'price', key: 'price', render: text => <span className='top_selling_product_row'>{text}</span> },
-    { title: <span className='top_selling_product_coloumn_title'>Qty</span>, dataIndex: 'qty', key: 'qty', render: text => <span className='top_selling_product_row'>{text}</span> },
-    { title: <span className='top_selling_product_coloumn_title'>Amount</span>, dataIndex: 'amount', key: 'amount', render: text => <span className='top_selling_product_row'>{text}</span> },
+    { title: <span className='top_selling_product_coloumn_title'>Price</span>, dataIndex: 'price', key: 'price', render: text => <span className='top_selling_product_row'>{text}</span> , onCell: () => ({ style: { padding: '10px' } })},
+    { title: <span className='top_selling_product_coloumn_title'>Qty</span>, dataIndex: 'qty', key: 'qty', render: text => <span className='top_selling_product_row'>{text}</span> , onCell: () => ({ style: { padding: '10px' } })},
+    { title: <span className='top_selling_product_coloumn_title'>Amount</span>, dataIndex: 'amount', key: 'amount', render: text => <span className='top_selling_product_row'>{text}</span> , onCell: () => ({ style: { padding: '10px' } })},
 ];
 
 function TopSelling() {

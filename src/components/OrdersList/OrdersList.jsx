@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { Table, Tag, Avatar, Input } from "antd";
+import  { useState } from "react";
+import { Table, Avatar, Input } from "antd";
 import {
   SearchOutlined,
   CalendarOutlined,
-  MoreOutlined,
 } from "@ant-design/icons";
 import { Ellipsis,Plus, ArrowUpDown,ListFilter } from 'lucide-react';
 

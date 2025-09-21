@@ -8,6 +8,7 @@
     z-index: 999;
     width: 60%;
     color: #ccc;
+    border-right: 0.5px solid;
 }
 
 .user_info_container{
@@ -89,8 +90,8 @@
   .left_sidebar_menu {
     position: unset;
     width: 212px;
-     background: #1C1C1C1A;
-      color: #222;
+    background: #f7f7f700;
+    color: #222;
   }
 
 

@@ -6,6 +6,8 @@
 .homepage_main_title{
     font-size: 14px;
     font-weight: 600;
+    max-width: 936px;
+    margin: auto;
 }
 
 .homepage_top_stats_container{
@@ -54,7 +56,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1024px;
+    max-width: 936px;
    
 }
 
@@ -75,13 +77,18 @@
 .homepage_top_selling_tabel_container{
     order:3;
     margin-top: 24px;
+    background: #F7F9FB;
+    border-radius: 16px;
+    padding: 24px;
 }
 
 .homepage_revenue_chart_container{
-    padding: 24px 0;
+    padding: 24px;
     width: 390px;
     height: 300px;
     order:1;
+    background: #F7F9FB;
+    border-radius: 16px;
 }
 
 @media screen and (min-width: 484px) {

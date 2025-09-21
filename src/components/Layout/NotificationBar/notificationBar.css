@@ -101,7 +101,7 @@
 @media screen and (min-width: 768px){
     .notification_bar{
       position: unset;
-      background: #1c1c1c2c;
+      background: rgb(254 248 248 / 22%);
       width:280px;
       color:#1f1e1e;;
     }

@@ -1,4 +1,4 @@
-import { Bar, BarChart, ResponsiveContainer, XAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis } from "recharts";
 
 
 const PROJECTION_DATA = [
@@ -42,7 +42,9 @@ function ProjectionChart() {
       <h4 className="hompage_bar_chat_title">Projection vs Actuals</h4>
         <ResponsiveContainer width="100%" height="100%" className="homepage_bar_chart">
         <BarChart width={150} height={40} data={PROJECTION_DATA} barSize={20}>
+          <CartesianGrid  vertical={false} fillOpacity={0.1} fill="#F7F9FB"/>
             <XAxis dataKey="name" style={{marginTop:'12px',fontSize:'12px'}}  />
+
             {/* <YAxis width={24} axisLine={false} /> */}
             <Bar dataKey="amt" stackId="a" fill="#A8C5DA" />
             <Bar dataKey="uv" stackId="a" fill="#d7dee2ff" />
