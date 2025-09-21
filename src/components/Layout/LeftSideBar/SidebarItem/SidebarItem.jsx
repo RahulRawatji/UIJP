@@ -17,7 +17,7 @@ const SidebarItem = ({ icon: Icon, label, children, disabled=false }) => {
                 className="sidebar_item_btn"
             >
                 <span className="sidebar_item_chevron">
-                    {children ? (open ? <ChevronDown color='rgba(28, 28, 28, 0.2)' size={16} /> : <ChevronRight  color='rgba(28, 28, 28, 0.2)' size={16} />) : null}
+                    {children ? (open ? <ChevronDown size={16} /> : <ChevronRight size={16} />) : null}
                 </span>
                 <span className="sidebar_item_icon">
                     <Icon size={18} />

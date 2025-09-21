@@ -33,6 +33,10 @@
   margin-left: auto;
 }
 
+.sidebar_item_chevron *{
+  color: var(--color);
+}
+
 .sidebar_item_children {
   margin-left: 24px;
   margin-top: 4px;
