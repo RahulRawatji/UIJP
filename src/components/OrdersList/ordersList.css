@@ -29,6 +29,14 @@
   display: flex;
   align-items: center;
 }
+.order_list_table_row{
+  padding: 0 16px;
+}
+
+.order_list_table_container {
+  width: 380px;
+  overflow-x: auto;
+}
 
 
 .user_cell {
@@ -44,4 +52,19 @@
 
 .ant-table-tbody > tr > td {
   padding: 12px 8px;
+}
+
+
+@media screen and (min-width: 430px) {
+  .order_list_table_container {
+    width:720px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .order_list_table_container {
+    width: 100%;
+  }
+  
 }

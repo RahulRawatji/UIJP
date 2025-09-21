@@ -17,6 +17,7 @@ export default function OrderList() {
       dataIndex: "id",
       key: "id",
       render: (id) => <span style={{fontSize:'12px'}}>{id}</span>,
+      style: {width: '100%'},
     },
     {
       title: <span className="order_list_col_heading">User</span>,
@@ -28,18 +29,21 @@ export default function OrderList() {
           <span style={{fontSize:'12px'}}>{user.name}</span>
         </div>
       ),
+       style: {width: '100%'},
     },
     {
       title: <span className="order_list_col_heading">Project</span>,
       dataIndex: "project",
       key: "project",
       render: (text) => <span style={{fontSize:'12px'}}>{text}</span>,
+      style: {width: '100%'},
     },
     {
       title: <span className="order_list_col_heading">Address</span>,
       dataIndex: "address",
       key: "address",
        render: (text) => <span style={{fontSize:'12px'}}>{text}</span>,
+        style: {width: '100%'},
     },
     {
       title: <span className="order_list_col_heading">Date</span>,
@@ -51,6 +55,7 @@ export default function OrderList() {
           <span style={{fontSize:'12px'}}>{text}</span>
         </span>
       ),
+       style: {width: '100%'},
     },
     {
       title:  <span className="order_list_col_heading">Status</span>,
@@ -137,7 +142,7 @@ export default function OrderList() {
       project: "App Landing Page",
       address: "Nest Lane Olivette",
       date: "Feb 2, 2023",
-      status: "Rejected",
+      status: "Pending",
     },
      {
       key: "7",
@@ -155,7 +160,7 @@ export default function OrderList() {
       project: "App Landing Page",
       address: "Nest Lane Olivette",
       date: "Feb 2, 2023",
-      status: "Rejected",
+      status: "Approved",
     },
   ];
 
@@ -183,14 +188,18 @@ export default function OrderList() {
         />
         </div>
       </div>
-      <Table
-      rowSelection={{}}
-        columns={columns}
-        dataSource={filteredData}
-        pagination={{ pageSize: 10 }}
-        scroll={{ x: 200 }} 
-        style={{marginTop:'12px'}}
-      />
+      <div className="order_list_table_container">
+        <Table
+                rowSelection={{}}
+                columns={columns}
+                dataSource={filteredData}
+                pagination={{ pageSize: 10 }}
+                scroll={{x: "max-content"}}
+                style={{marginTop:'12px'}}
+                rowClassName={'order_list_table_row'}
+              />
+      </div>
+     
     </div>
   );
 }
